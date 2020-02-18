@@ -9,3 +9,11 @@
 .showing {
     display: block;
 }
+
+#clocktext {
+    color: midnightblue;
+}
+
+button {
+    padding: 3px;
+}
