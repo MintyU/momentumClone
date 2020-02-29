@@ -1,46 +1,121 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  height: 100%;
+  position: relative;
+  margin: 0;
+  align-items: center;
+}
+html {
+  height: 100%;
+}
+input {
+  border: 0px;
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 45px;
+  width: 300px;
+  color: white;
+  font-size: 1.5em;
+  border-radius: 30px;
+}
+
+input::placeholder {
+    text-align: center;
+}
+button {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
 .form {
-    display: none;
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.js-toDoForm {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .greetings {
-    display: none;
-    color: white;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 39%;
+  display: none;
+  color: white;
+  text-align: center;
+  font-size: 3em;
 }
 
 .showing {
-    display: block;
+  display: block;
 }
 
 .toDoList {
-    color: white;
+  color: white;
+  position: absolute;
+  top: 60%;
+  list-style: none;
+  left: 40%;
+  width: 17%;
+  font-size: 1.3em;
+  font-weight: 400;
 }
 
 .weather {
-    color: white;
+  color: white;
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  font-size: 1.5em;
+}
+
+.js-clock {
+  position: relative;
+  top: 20%;
 }
 
 #clocktext {
-    color: white;
+  margin: 0;
+  color: white;
+  margin-left: 20%;
+  margin-right: 20%;
+  text-align: center;
+  font-size: 10em;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 100px;
 }
 
 button {
-    padding: 3px;
+  padding: 3px;
 }
 
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-    }to {
-        opacity: 1;
-    }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .bgImage {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    animation: fadeIn 0.6s linear;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  animation: fadeIn 0.6s linear;
+}
+
+button {
+    margin-right: 5px;
+    font-size: 1.1em;
 }
